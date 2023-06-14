@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion de pesos</title>
+    <script src="./conversion.js"></script>
+    <link rel="stylesheet" href="./estiloC.css">
+</head>
+
+<body>
+    <form id="Resultado" action="Conversion.html">
+
+        <div class="contenedor">
+            <h3>CONVERTIDOR DE PESOS</h3>
+            <p><input type="number" name="valor1" id="valor1" placeholder="Peso" onblur="cValor1()"></p>
+            <p><input type="number" name="valor2" id="valor2" placeholder="Valor del Dolar" onblur="cValor2()"></p>
+    
+            <input type="button" value="CALCULAR PESO A DOLAR" onclick="calcularPeso_Dolar()">
+            <h3></h3>
+            <input type="button" value="CALCULAR DOLAR A PESOS" onclick="calcularDolar_Peso()">
+    
+            <h2><span id="resultado"></span></h2>
+
+            <input type="button" onclick="limpiarFormulario()" value="Limpiar formulario">
+        </div>
+    </form>
+</body>
+</html>
